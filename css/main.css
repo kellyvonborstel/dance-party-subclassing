@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+=====================================
+Custom Styles
+=====================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font: 400 .9em/1.5 "Nobile", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 100px auto 0;
+}
+
+.main-header {
+  width: 100%;
+  height: 170px;
+  padding-top: 32px;
+  background: #000;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+ul {
+  height: 40px;
+  padding: 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  width: 130px;
+  height: 35px;
+  margin: 7px;
+  background: #fff;
+  font-size: .85em;
+  line-height: 35px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btn-pink {
+  background: #ec1e6e;
+}
+
+.btn-green {
+  background: #91aa35;
+}
+
+.btn-orange {
+  background: #f47820;
+}
+
+.btn-blue {
+  background: #009b9e;
+}
+
+.btn-group,
+.btn-remove {
+  color: #000;
+}
+
+.dance-area {
+  overflow: hidden;
+  height: 700px;
+  width: 100%;
+  background-image: url('../img/background.gif');
+}
