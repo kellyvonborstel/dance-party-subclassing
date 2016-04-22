@@ -16,3 +16,18 @@ Dancer.prototype.setPosition = function(top, left) {
   };
   this.$node.css(positionSettings);
 };
+
+
+Dancer.prototype.group = function() {
+  var that = this;
+  this.$node.fadeOut();
+
+  setTimeout(function() {
+    that.$node.css('left', 0);
+  },500);
+
+  setTimeout(function() {
+    that.$node.fadeIn();
+  },1000);
+};
+ 

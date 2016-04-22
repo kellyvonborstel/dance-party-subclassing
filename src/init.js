@@ -30,3 +30,9 @@ $(document).ready(function() {
 
   });
 });
+
+$('.btn-group').on('click', function(event) {
+  window.dancers.forEach(function(dancer) {
+    dancer.group();
+  });
+});
