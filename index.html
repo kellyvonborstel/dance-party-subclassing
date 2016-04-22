@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Disco Ball Dance Party</title>
+  <link href='https://fonts.googleapis.com/css?family=Nobile:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/discoBall.css">
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <h1>Disco Ball Dance Party</h1>
+      <ul>
+        <li class="btn btn-add-dancer btn-pink" data-dancer-maker-function-name="PinkDancer"><strong>pink</strong> dancer</li>
+        <li class="btn btn-add-dancer btn-green" data-dancer-maker-function-name="GreenDancer"><strong>green</strong> dancer</li>
+        <li class="btn btn-add-dancer btn-orange" data-dancer-maker-function-name="OrangeDancer"><strong>orange</strong> dancer</li>
+        <li class="btn btn-add-dancer btn-blue" data-dancer-maker-function-name="BlueDancer"><strong>blue</strong> dancer</li>
+        <li class="btn btn-group"><strong>group</strong> dancers</li>
+        <li class="btn btn-remove"><strong>remove</strong> dancers</li>
+      </ul>
+    </header>
+    <div class="dance-area">
+      <div id="disco-slide-ball">
+        <div id="disco-ball"></div>
+      </div>      
+    </div>
+  </div>
+  <div class="audio-container">
+    <audio autoplay controls src="mp3/moveyourfeet.mp3"></audio>
+  </div>
+  <script src="lib/jquery.js"></script>
+  <script src="src/discoBall.js"></script>
+  <script src="src/init.js"></script>
+  <script src="src/dancer.js"></script>
+  <script src="src/dancerSubclasses.js"></script>
+</body>
+</html>

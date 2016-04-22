@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+=====================================
+Custom Styles
+=====================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font: 400 .9em/1.5 "Nobile", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 960px;
+  margin: 100px auto 0;
+}
+
+/*
+=====================================
+Header Styles
+=====================================
+*/
+
+.main-header {
+  position: relative;
+  z-index: 300;
+  width: 100%;
+  height: 170px;
+  padding-top: 32px;
+  background: #000;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+ul {
+  height: 40px;
+  padding: 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  width: 130px;
+  height: 35px;
+  margin: 7px;
+  background: #fff;
+  font-size: .85em;
+  line-height: 35px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btn-pink {
+  background: #ec1e6e;
+}
+
+.btn-green {
+  background: #91aa35;
+}
+
+.btn-orange {
+  background: #f47820;
+}
+
+.btn-blue {
+  background: #009b9e;
+}
+
+.btn-group,
+.btn-remove {
+  color: #000;
+}
+
+/*
+=====================================
+Dance Styles
+=====================================
+*/
+
+.dance-area {
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+  background-image: url('../img/background.gif');
+}
+
+.dancer {
+  position: absolute;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.pink-dancer {
+  width: 28%;
+  background-image: url('../img/pink-dancer.png');
+  -webkit-animation: rock 1.25s infinite ease-in-out;
+}
+
+@-webkit-keyframes rock {
+  50% { -webkit-transform: rotate(-10deg) translateY(-15px); }
+}
+
+.green-dancer {
+  width: 33%;
+  background-image: url('../img/green-dancer.png');
+  -webkit-animation: jump 1.25s infinite ease-in-out;
+}
+
+@-webkit-keyframes jump {
+  50% { -webkit-transform: translateY(-50px); }
+}
+
+.blue-dancer {
+  width: 29%;
+  background-image: url('../img/blue-dancer.png');
+  -webkit-animation: resize 1.25s infinite ease-in-out;
+}
+
+@-webkit-keyframes resize {
+  50% { -webkit-transform: scale(1.05) rotate(3deg) translateX(-30px); }
+}
+
+.orange-dancer {
+  width: 36%;
+  background-image: url('../img/orange-dancer.png');
+  -webkit-animation: step 1.25s infinite ease-in-out;
+}
+
+@-webkit-keyframes step {
+  50% { -webkit-transform: scale(1.05) translateX(40px); }
+}
+
+.audio-container {
+  margin-top: 30px;
+}

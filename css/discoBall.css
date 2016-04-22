@@ -1,0 +1,80 @@
+/* Did not create the disco ball or the associated styles,
+though did manipulate the movement on page. Disco ball from
+http://codepen.io/msaetre/pen/fDuzC/ */
+
+@-webkit-keyframes slideDiscoBall {
+  -0% { -webkit-transform: translateY(-250%); }
+  50% { -webkit-transform: translateY(8%); }
+  65% { transform: translateY(4%); }
+  80% { transform: translateY(2%); }
+  100% { transform: translateY(0%); } 
+}
+
+@keyframes slideDiscoBall {
+  -0% { transform: translateY(-250%); } 
+  50% { transform: translateY(8%); } 
+  65% { transform: translateY(4%); } 
+  80% { transform: translateY(2%); }
+  100% { transform: translateY(0%); } 
+}
+@-webkit-keyframes rotateDiscoBall {
+  0% { -webkit-transform: rotateX(90deg) rotateZ(0deg) rotate(0deg); }
+  100% { -webkit-transform: rotateX(90deg) rotateZ(360deg) rotate(0deg); }
+}
+
+@keyframes rotateDiscoBall {
+  0% { transform: rotateX(90deg) rotateZ(0deg) rotate(0deg); }
+  100% { transform: rotateX(90deg) rotateZ(360deg) rotate(0deg); }
+}
+
+@-webkit-keyframes rotateDiscoBallMiddle {
+  0% { -webkit-transform: rotateX(90deg) rotateY(0deg) rotate(0deg); }
+  100% { -webkit-transform: rotateX(90deg) rotateY(-360deg) rotate(0deg); }
+}
+
+@keyframes rotateDiscoBallMiddle {
+  0% { transform: rotateX(90deg) rotateY(0deg) rotate(0deg); }
+  100% { transform: rotateX(90deg) rotateY(-360deg) rotate(0deg); }
+}
+
+@-webkit-keyframes reflect {
+  0% { -webkit-filter: brightness(60%); }
+  50% { -webkit-filter: brightness(120%); }  
+  100% { -webkit-filter: brightness(90%); }  
+}
+
+@keyframes reflect {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }  
+  100% { opacity: 1; }  
+}
+
+#disco-slide-ball {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  margin-left: -50px;
+  -webkit-animation: slideDiscoBall 32s;
+  -animation: slideDiscoBall 32s;
+}
+
+#disco-ball {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; 
+  -webkit-animation: rotateDiscoBall 18s linear infinite;
+  animation: rotateDiscoBall 18s linear infinite;
+}
+
+.square {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; 
+  transform: rotateX(90deg) rotateY(0deg) translateZ(0px);
+}
