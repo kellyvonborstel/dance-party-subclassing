@@ -5,7 +5,8 @@ $(document).ready(function() {
   // sets up click handlers for add dancer buttons on index.html
   $('.btn-add-dancer').on('click', function(event) {
 
-    // new object of given type will be created and added to dance area
+    // dancerMakerFunctionName is a string which must match one of the
+    // dancer maker functions available in global scope
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
     // get the maker function for the kind of dancer we are making
@@ -13,7 +14,7 @@ $(document).ready(function() {
 
     var height;
 
-    // use modulo to stagger height positiona for dancers
+    // use modulo to stagger height positions for dancers
     if (window.dancers.length % 3 === 0) {
       height = $('.dance-area').height() - 300;
     } else if (window.dancers.length % 2 === 0) {
