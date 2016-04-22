@@ -12,7 +12,7 @@
     <header class="main-header">
       <h1>Disco Ball Dance Party</h1>
       <ul>
-        <li class="btn btn-add-dancer btn-pink"><strong>pink</strong> dancer</li>
+        <li class="btn btn-add-dancer btn-pink" data-dancer-maker-function-name="PinkDancer"><strong>pink</strong> dancer</li>
         <li class="btn btn-add-dancer btn-green"><strong>green</strong> dancer</li>
         <li class="btn btn-add-dancer btn-orange"><strong>orange</strong> dancer</li>
         <li class="btn btn-add-dancer btn-blue"><strong>blue</strong> dancer</li>
@@ -29,6 +29,10 @@
   <div class="audio-container">
     <audio autoplay controls src="mp3/moveyourfeet.mp3"></audio>
   </div>
+  <script src="lib/jquery.js"></script>
   <script src="src/discoBall.js"></script>
+  <script src="src/init.js"></script>
+  <script src="src/dancer.js"></script>
+  <script src="src/pinkDancer.js"></script>
 </body>
 </html>
