@@ -1,5 +1,5 @@
 var BlueDancer = function(top, left, timeBetweenSteps) {
-  Dancer.call(this);
+  Dancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('blue-dancer');
 };
 

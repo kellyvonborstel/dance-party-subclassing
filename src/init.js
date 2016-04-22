@@ -12,14 +12,14 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     var height;
-    
-    // use modulo so dancers will be positioned at different heights
+
+    // use modulo to stagger height positiona for dancers
     if (window.dancers.length % 3 === 0) {
-      height = $('.dance-area').height() - 460;
+      height = $('.dance-area').height() - 300;
     } else if (window.dancers.length % 2 === 0) {
-      height = $('.dance-area').height() - 420;
+      height = $('.dance-area').height() - 270;
     } else {
-      height = $('.dance-area').height() - 380;
+      height = $('.dance-area').height() - 240;
     }
 
     // make a dancer with a random x-position and staggered y-position
