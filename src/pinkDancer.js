@@ -9,3 +9,7 @@ PinkDancer.prototype.constructor = PinkDancer;
 PinkDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
 };
+
+PinkDancer.prototype.grow = function() {
+  Dancer.prototype.grow.call(this, '38%', '28%');
+};

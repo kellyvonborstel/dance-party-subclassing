@@ -9,3 +9,7 @@ GreenDancer.prototype.constructor = GreenDancer;
 GreenDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
 };
+
+GreenDancer.prototype.grow = function() {
+  Dancer.prototype.grow.call(this, '43%', '33%');
+};

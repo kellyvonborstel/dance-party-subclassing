@@ -9,3 +9,7 @@ BlueDancer.prototype.constructor = BlueDancer;
 BlueDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
 };
+
+BlueDancer.prototype.grow = function() {
+  Dancer.prototype.grow.call(this, '39%', '29%');
+};

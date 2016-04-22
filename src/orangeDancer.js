@@ -9,3 +9,7 @@ OrangeDancer.prototype.constructor = OrangeDancer;
 OrangeDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
 };
+
+OrangeDancer.prototype.grow = function() {
+  Dancer.prototype.grow.call(this, '45%', '35%');
+};

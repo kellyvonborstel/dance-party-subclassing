@@ -3,6 +3,7 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   this.setPosition(top, left);
   this.step();
+  this.grow();
 };
 
 Dancer.prototype.step = function() {
@@ -34,8 +35,25 @@ Dancer.prototype.group = function() {
 Dancer.prototype.remove = function() {
   var that = this;
   this.$node.fadeOut(1500);
-  
+
   setTimeout(function(){
     that.$node.remove();
   },2000);
+};
+
+
+Dancer.prototype.grow = function(width1, width2){
+  var that = this;
+
+  this.$node.on('mouseover', function() {
+    that.$node.animate({
+      width: width1
+    });
+  });
+
+  this.$node.on('mouseout', function() {
+    that.$node.animate({
+      width: width2
+    });
+  });
 };
