@@ -30,4 +30,12 @@ Dancer.prototype.group = function() {
     that.$node.fadeIn();
   },1000);
 };
- 
+
+Dancer.prototype.remove = function() {
+  var that = this;
+  this.$node.fadeOut(1500);
+  
+  setTimeout(function(){
+    that.$node.remove();
+  },2000);
+};

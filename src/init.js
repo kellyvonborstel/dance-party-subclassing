@@ -36,3 +36,9 @@ $('.btn-group').on('click', function(event) {
     dancer.group();
   });
 });
+
+$('.btn-remove').on('click', function(event) {
+  window.dancers.forEach(function(dancer) {
+    dancer.remove();
+  });
+});
