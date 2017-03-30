@@ -5,4 +5,4 @@ Dance party project to practice JavaScript pseudoclassical instantiation, inheri
 
 **Warning: This page has sound.**
 
-##[http://kellyvonborstel.github.io/dance-party-subclassing/](http://kellyvonborstel.github.io/dance-party-subclassing/)
+[http://kellyvonborstel.github.io/dance-party-subclassing/](http://kellyvonborstel.github.io/dance-party-subclassing/)
